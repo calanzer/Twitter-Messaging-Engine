@@ -2,4 +2,19 @@
 Readme File for Twitter Messaging Engine
 Christian Lanzer
 Comp 330
+
+This program will take a 'tweet' and parse it into a list of words.
+It will check those words for topic references that start with a '#' and it will
+put them in a separate topic list. It will check for words starting with '@' and
+add them to a separate person list. It will print our respective lists and by separating topics
+and persons from the original message we hope that later we can use those references in a useful way
+possibly by having them link to the person or topic that they are referencing.
+
+The program has several unit tests. The unit tests will check to make sure our tweet is less than the
+140 character limit that applies to tweets. It will also check to make sure our topic and person lists
+are populated with the correct data. All unit tests pass and work when they are meant to fail.
+
+You could use this program to parse tweets and separate the relevant data into lists. Once the topics,
+and persons are separated and identified you could use that data for a larger program.
+
 ******
