@@ -33,12 +33,12 @@ for word in mylist:
 print person
 print topic
 print mylist
-
+print len(mystring)
 
 import unittest
 
 #Unit tests that check to make sure our lists contain the appropriate values. I used the assertListEqual
-#function to compare lists.
+#function to compare lists. It will also check to make sure our tweet is under 140 chars.
 class PrimesTestCase(unittest.TestCase):
 
     def test_pass(self):
@@ -55,6 +55,10 @@ class PrimesTestCase(unittest.TestCase):
     def test_list_topic(self):
         testTopic = ['#is', '#nice']
         self.assertListEqual(topic, testTopic)
+
+    def test_size(self):
+        self.assertTrue(len(mystring) < 140)
+
 
 if __name__ == '__main__':
     unittest.main()
