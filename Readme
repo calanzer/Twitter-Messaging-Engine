@@ -17,4 +17,6 @@ are populated with the correct data. All unit tests pass and work when they are 
 You could use this program to parse tweets and separate the relevant data into lists. Once the topics,
 and persons are separated and identified you could use that data for a larger program.
 
+Note: Should be run on Python 3 or higher to use Print without parenthesis.
+
 ******
