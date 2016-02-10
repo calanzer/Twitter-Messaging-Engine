@@ -17,7 +17,7 @@ person = []
 #Topic list conatins all word that start with '#'
 topic = []
 #This is just an increment for our print function to tell us which word number we are on
-url = []
+link = []
 wordnumber = 1
 #Got the regex compiler to test for URLs from http://stackoverflow.com/questions/23459812/using-re-compile-and-re-sub
 #What the regex compiler does though is basically confirm the the 'word' is a http:// or a https://
@@ -35,7 +35,7 @@ for word in mylist:
     print "This is word %d %s" % (wordnumber,  word)
     wordnumber += 1
     if re.findall(regex, word):
-        url.append(word)
+        link.append(word)
     for letter in word:
         if letter == '@':
             person.append(word)
@@ -44,7 +44,7 @@ for word in mylist:
 print person
 print topic
 print mylist
-print url
+print link
 print len(mystring)
 
 import unittest
@@ -71,9 +71,9 @@ class PrimesTestCase(unittest.TestCase):
     def test_size(self):
         self.assertTrue(len(mystring) < 200)
 
-    def test_url(self):
-        testURL = ['http://google.com']
-        self. assertListEqual(url, testURL)
+    def test_link(self):
+        testLink = ['http://google.com']
+        self. assertListEqual(link, testLink)
 
 
 if __name__ == '__main__':
