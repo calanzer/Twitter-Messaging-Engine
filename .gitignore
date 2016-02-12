@@ -23,6 +23,8 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+.idea/
+Twitter-Messaging-Engine/.idea/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
